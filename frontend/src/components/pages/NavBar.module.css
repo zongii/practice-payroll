@@ -1,0 +1,172 @@
+.mainContainer {
+    top: 0;
+    left: 0;
+
+    max-width: 100vw;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    padding-inline: 25px;
+
+    background-color: #2C3034;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+
+}
+
+.logoIcon {
+    color: white;
+    height: 35px;
+    width: 35px;
+}
+
+.logoText {
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.activePath {
+    color: gold !important;
+    cursor: default;
+    user-select: none;
+}
+
+.group {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+    transition: 0.2s;
+    height: 100%;
+    user-select: none;
+    background-color: #2C3034;
+    border: none;
+    outline: none;
+    z-index: 105;
+
+}
+
+.group:hover {
+    transition: 0.2s;
+    color: orange;
+    cursor: pointer;
+}
+
+.group:focus {
+    transition: 0.2s;
+    color: orange;
+    cursor: pointer;
+}
+
+.group2 {
+    position: relative;
+    color: rgb(255, 218, 150);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+    transition: 0.2s;
+    height: 35px;
+    user-select: none;
+    background-color: #2C3034;
+    border: 3px solid rgb(255, 218, 150);
+    outline: none;
+    z-index: 105;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.group2:hover {
+    transition: 0.2s;
+    color: orange;
+    border: 3px solid orange;
+    cursor: pointer;
+}
+
+.spacer {    
+    margin-left: auto;
+}
+
+.userName {
+    padding: 0;
+    margin: 0;
+    z-index: 110;
+}
+
+.userIcon {
+    height: 30px;
+    width: 30px;
+    z-index: 110;
+
+}
+
+.smallIcon {
+    height: 20px;
+    width: 20px;
+    z-index: 110;
+    margin-right: -15px;
+}
+
+.group:focus .dropDown {
+    transition: 0.2s;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.link {
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.link:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.dropDown {
+    position: absolute;
+    opacity: 0;
+    top: 56px;
+    transition: 0.2s;
+    min-width: 100px;
+    width: 100%;
+    background-color: #33373b;
+    right: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.dropDown p {
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    transition: 0.1s;
+    background-color: rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dropDown p:hover {
+    color: orange;
+    transition: 0.1s;
+    background-color: rgba(255,255,255,0.1);
+}

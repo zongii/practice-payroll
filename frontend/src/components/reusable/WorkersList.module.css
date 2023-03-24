@@ -1,0 +1,17 @@
+.mainContainer {
+    border-radius: 1rem; 
+    padding: 0;
+    height: 100%;
+    overflow: overlay;
+}
+
+.thead {
+    position: sticky;
+    border-collapse: separate;
+    top: 0;
+}
+
+.rowHover:hover td {
+    cursor: pointer;
+    color:orange !important;
+}
